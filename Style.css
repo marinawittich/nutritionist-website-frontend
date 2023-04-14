@@ -1,0 +1,343 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Karla', sans-serif;
+}
+
+/* navbar top */
+
+.logo h3{
+    font-weight: bold;
+}
+@media screen and (max-width:420px){
+    .logo h3{
+        font-size: 20px;
+    }
+}
+.icons i img{
+    margin-left: 10px;
+    cursor: pointer;
+}
+@media screen and (max-width:420px){
+    .icons i img{
+        width: 20px;
+    }
+}
+@media screen and (max-width:850px){
+    .content{
+        margin-top: 0px !important;
+    }
+    .content h1{
+        font-size: 30px !important;
+    }
+    .main-content{
+        height: 100vh !important;
+    }
+    .card-image {
+        height: fit-content !important;
+    }
+    .card-desc-text {
+        height: 550px !important;
+ 
+    } 
+}
+
+.main-content{
+    width: 100%;
+    height: 90vh;
+    background-image: url(./UI/background.jpg);
+    background-size: cover;
+    background-position: 70%;
+}
+.navbar {
+    background: none !important;
+}
+.nav-link{
+    color: #000 !important;
+    font-size: 20px !important;
+    font-weight: 900 !important;
+    margin-left: 10px;
+}
+.nav-link:hover {
+    transition: .5 ease-in-out !important;
+    transform: scale(1.1);
+    color: #2c583a !important;
+}
+/* content */
+.content{
+    margin-top: 150px;
+    margin-left: 60px;
+}
+.content h1{
+    font-size: 50px;
+}
+.btn1 button{
+    width: 250px;
+    height: 70px;
+    font-size: 20px;
+    background: #feaf80;
+    border-radius: 20px;
+    padding: 5px;
+    border: 1px solid black;
+    letter-spacing: 3px;
+    font-weight: bold;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+.btn1 button:hover{
+    background-color: #b3e9e9;
+}
+@media screen and (max-width:420px){
+    .content h1{
+        font-size: 30px;
+    }
+    .about-content h1 {
+        font-size: 30px;
+    }
+    .about-content {
+        margin-top: -10px;
+    }
+    .section {
+        font-size: -10px;
+    }
+
+}
+.section-cont {
+    display: flex;
+    justify-content: center;
+}
+.section {
+    font-family: 'Caveat', cursive;
+    color: #2c583a;
+    font-size: 55px;
+    margin: 3%;
+} 
+
+/* free courses section */
+.imagePositionFixed {
+    background:url("UI/photo-info.png") no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 70vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.recipe-info-cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 10%;
+    padding: 2%;
+    background-color: #feeec7;
+    border-radius: 20px;
+    width: fit-content;
+    height: 60vh;
+    box-shadow:  5px 5px 15px rgba(0,0,0,.5);
+}
+.recipe-info-header {
+    color: #2c583a;
+    font-weight: bolder;
+    margin-bottom: 10%;
+}
+.recipe-info {
+    list-style: none;
+    color: #2c583a;
+    font-weight: bolder;
+    margin-bottom: 5%;
+    font-size: 20px;
+}
+.bowl-icon {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10%;
+}
+
+.card-header {
+    background-color: #b3e9e9 !important;
+}
+.card-image {
+    width: 100%;
+}
+.list-styled {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: left !important;
+}
+.btn-outline {
+    border: 1px solid #b3e9e9 !important;
+}
+.btn-outline:hover {
+    background-color: #b3e9e9 !important;
+}
+.card-desc-text {
+    height: 400px;
+    margin-top: 20px;
+} 
+/* about */
+.center-vertical {
+    display: flex;
+    width: 100%;
+    
+    align-items: center;
+    padding: 20px;
+}
+.about-section {
+    width: 100%;
+    padding: calc(5% + 30px) 0px;
+}
+.about-section .img-head {
+    position: relative;
+    overflow: hidden;
+}
+.about-section .img-head .about-img {
+    width: 100%;
+    transition: transform .3s;
+    box-shadow:  5px 5px 15px rgba(0,0,0,.5) !important;
+}
+.about-section .img-head:hover .about-img {
+    transform: scale(1.2)
+}
+.about-section .img-head::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position:absolute;
+    left:0;
+    top: 0;
+    opacity: .5;
+}
+.about-section .about-text-head {
+    font-size: 28px;
+    color:#2c583a;
+}
+.about-section .break-small {
+    width: 80px;
+    height: 3px;
+    background-color: #2c583a;
+}
+.about-section .about-text-para {
+    font-size: 18px;
+    color:#4D4D4D;
+}
+.about-section .box {
+    background-color: #f78a4b;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px !important;
+}
+.about-section .box::after,
+.about-section .box::before {
+    content: "";
+    position:absolute;
+    width: 100px;
+    height: 100px;
+    background-color: #fff5;
+    border-radius: 50%;
+    transition: transform .3s;
+}
+.about-section .box::after {
+    left: -50px;
+    top: -50px;
+}
+.about-section .box::before {
+    right: -50px;
+    bottom: -50px;
+}
+.about-section .box:hover::after,
+.about-section .box:hover::before {
+    transform: scale(1.2);
+}
+/* steps */
+    .step-call-header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .step-cont {
+        background-color: #b3e9e9;;
+        border: 1px solid #b3e9e9;
+        border-radius: 10px;
+        padding: 10px;
+        
+    }
+    .step-cont h3 {
+        font-size: 32px;
+        padding-left: 10px;
+        margin-top: 10px;
+    }
+    .step-cont p {
+        font-size: 18px;
+    }
+    .arrow-icon-cont {
+        display: flex;
+        justify-content: center;
+        margin: 10px;
+        color: #b3e9e9;
+    }
+/* slider */
+.card-slider {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    height: 580px;
+    background-color: #ffbf99 !important;
+    border-radius: 20px !important; 
+    position: relative;
+}
+.card-slider p {
+    font-size: 18px;
+}
+.quote {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    opacity: 0.3;
+}
+.slider-text {
+    margin-top: 80px;
+}
+.owl-prev{
+    left: -30px;
+}
+.owl-next{
+    right: -30px;
+}
+.owl-prev , .owl-next {
+    position: absolute;
+    top: 50%;
+}
+.owl-prev span , .owl-next span {
+    font-size: 50px;
+    color:#f78a4b;
+}
+/* scroll */
+.scrBtn{
+    color:#f78a4b;
+    border-radius: 50%;
+    font-size: 18px;
+    border: none;
+    
+}
+#scrollTop{
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    z-index: 9999;
+}
+/* footer */
+.footer-cont {
+    background: #feeec7 !important;
+}
+.footer-link {
+    margin-top: 20px !important;
+}
+
+
+
+
