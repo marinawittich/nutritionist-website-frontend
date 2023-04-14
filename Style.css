@@ -31,13 +31,11 @@
         font-size: 30px !important;
     }
     .main-content{
-        height: 100vh !important;
+        height: 70vh !important;
     }
-    .card-image {
-        height: fit-content !important;
-    }
+
     .card-desc-text {
-        height: 550px !important;
+        height:  fit-content !important;
  
     } 
 }
