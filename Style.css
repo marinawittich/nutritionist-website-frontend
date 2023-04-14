@@ -49,12 +49,14 @@
 }
 .navbar {
     background: none !important;
+    font-family: 'Karla', sans-serif !important;
 }
 .nav-link{
     color: #000 !important;
     font-size: 20px !important;
     font-weight: 900 !important;
     margin-left: 10px;
+    font-family: 'Karla', sans-serif !important;
 }
 .nav-link:hover {
     transition: .5 ease-in-out !important;
