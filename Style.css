@@ -33,7 +33,9 @@
     .main-content{
         height: 70vh !important;
     }
-
+    .card-image {
+    height: 100%;
+    }
     .card-desc-text {
         height:  fit-content !important;
  
